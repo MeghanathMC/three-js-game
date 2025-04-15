@@ -5,15 +5,18 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: true,
     rollupOptions: {
       input: {
         main: './index.html'
       },
       output: {
-        manualChunks: undefined,
-        format: 'es'
+        manualChunks: undefined
       }
     }
+  },
+  optimizeDeps: {
+    include: ['three', 'howler']
   },
   server: {
     headers: {

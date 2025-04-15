@@ -8,7 +8,16 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html'
+      },
+      output: {
+        manualChunks: undefined,
+        format: 'es'
       }
+    }
+  },
+  server: {
+    headers: {
+      'Content-Type': 'application/javascript'
     }
   }
 }) 

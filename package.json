@@ -10,10 +10,12 @@
     "start": "vite"
   },
   "dependencies": {
-    "three": "^0.160.0",
-    "howler": "^2.2.4"
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "vite": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 } 
